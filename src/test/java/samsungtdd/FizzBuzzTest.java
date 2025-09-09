@@ -1,5 +1,6 @@
 package samsungtdd;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -41,6 +42,11 @@ public class FizzBuzzTest {
         int n =15;
         String[] expected = new String[]{"1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"};
         assertArrayEquals(expected, FizzBuzz.solve(n));
+    }
+
+    @AfterAll
+    public static void test_afterall() {
+        System.out.println("test_afterall");
     }
 
 
